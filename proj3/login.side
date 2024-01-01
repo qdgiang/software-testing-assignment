@@ -1,0 +1,521 @@
+{
+  "id": "a09fff1e-4218-448a-9daf-3cc2b4c9eee5",
+  "version": "2.0",
+  "name": "login",
+  "url": "http://localhost/moodle/",
+  "tests": [{
+    "id": "1e9342ac-8cbf-440e-ad81-8ee9b5bf518e",
+    "name": "normal_login",
+    "commands": [{
+      "id": "23fc4fe0-49c2-4a76-806c-98535b1dc734",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/moodle/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf3a7486-d39f-4444-a66e-cd151ff6bdd6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x694",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0ce6aa18-0a41-402f-b2b2-cab87489c394",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
+      "targets": [
+        ["linkText=Log in", "linkText"],
+        ["css=.login > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Log in')]", "xpath:link"],
+        ["xpath=//div[@id='usernavigation']/div/div/span/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost/moodle/login/index.php']", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f540b44f-d440-4c17-81b9-71af48eb96b2",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ba8aa6a-6fdb-441f-b13a-1c72bbaac3ab",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_17_2_1_1702045811820_20']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "goodstudent"
+    }, {
+      "id": "3e5ea3e4-ab52-42ca-bc47-b09e68316493",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dca8ad79-e2f7-4b50-84b7-1b6ef31135ec",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_17_2_1_1702045811820_25']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "12345678aA!"
+    }, {
+      "id": "823a9da1-3e13-431b-b76b-040dd18ffd79",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginbtn",
+      "targets": [
+        ["id=loginbtn", "id"],
+        ["css=#loginbtn", "css:finder"],
+        ["xpath=//button[@id='loginbtn']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9ca05dd-6e5c-4f3e-a49d-28ac4b59fc1f",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=instance-10-header",
+      "targets": [
+        ["id=instance-10-header", "id"],
+        ["css=#instance-10-header", "css:finder"],
+        ["xpath=//h5[@id='instance-10-header']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_17_2_1_1702046236065_76']/h5", "xpath:idRelative"],
+        ["xpath=//div/aside/section/div/h5", "xpath:position"],
+        ["xpath=//h5[contains(.,'Timeline')]", "xpath:innerText"]
+      ],
+      "value": "Timeline"
+    }, {
+      "id": "2382133b-1219-4f91-ae89-8e7d220666da",
+      "comment": "",
+      "command": "click",
+      "target": "id=user-menu-toggle",
+      "targets": [
+        ["id=user-menu-toggle", "id"],
+        ["linkText=gs", "linkText"],
+        ["css=#user-menu-toggle", "css:finder"],
+        ["xpath=//a[@id='user-menu-toggle']", "xpath:attributes"],
+        ["xpath=//div[@id='usernavigation']/div[3]/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div[3]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'gs')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8b0bd7b-8dde-4541-991b-33b6a1c353ec",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log out",
+      "targets": [
+        ["linkText=Log out", "linkText"],
+        ["css=.dropdown-item:nth-child(9)", "css:finder"],
+        ["xpath=//a[contains(text(),'Log out')]", "xpath:link"],
+        ["xpath=//div[@id='carousel-item-main']/a[7]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost/moodle/login/logout.php?sesskey=BQTLmZWLbI']", "xpath:href"],
+        ["xpath=//a[7]", "xpath:position"],
+        ["xpath=//a[contains(.,'Log out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "da6a8d21-8f24-4b8b-ae63-08edcf9e3f2f",
+    "name": "non_existent_username",
+    "commands": [{
+      "id": "df49d8a6-10c9-4c53-bf04-818bec12d498",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/moodle/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "394515e2-e53c-46fa-8f0e-3fcb67751b81",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x694",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "86d9f783-0ab4-42d7-9cea-41f9b3f66a29",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
+      "targets": [
+        ["linkText=Log in", "linkText"],
+        ["css=.login > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Log in')]", "xpath:link"],
+        ["xpath=//div[@id='usernavigation']/div/div/span/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost/moodle/login/index.php']", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "19ae31d8-9ccb-4700-9a32-78aea9d95baa",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "841037c5-d446-40cb-b505-1b1445a3ac89",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_17_2_1_1702045811820_20']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "nonexistence_username"
+    }, {
+      "id": "2e74adfa-c017-4d84-915b-95bb1968b8d0",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "782763fb-7854-4686-978e-b3651bd1ced1",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_17_2_1_1702045811820_25']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "12345678aA!"
+    }, {
+      "id": "51f71f32-1f31-4d0c-9130-db47b41735d0",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginbtn",
+      "targets": [
+        ["id=loginbtn", "id"],
+        ["css=#loginbtn", "css:finder"],
+        ["xpath=//button[@id='loginbtn']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1cf96e51-5cf0-4305-9998-5dd1ce97f4cf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//section[@id='region-main']/div/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "224e351e-d44f-4897-830f-af89849e13eb",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=loginerrormessage",
+      "targets": [
+        ["id=yui_3_17_2_1_1702048889979_20", "id"],
+        ["css=#yui_3_17_2_1_1702048889979_20", "css:finder"],
+        ["xpath=//div[@id='yui_3_17_2_1_1702048889979_20']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_17_2_1_1702048889979_21']/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div", "xpath:position"]
+      ],
+      "value": "Invalid login, please try again"
+    }]
+  }, {
+    "id": "236c0236-5506-4ae7-be02-b0aa30bd1e9a",
+    "name": "wrong_password",
+    "commands": [{
+      "id": "3d2f9a23-53a5-4f10-9045-fc9bec41a378",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/moodle/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "399c979a-1e4a-40d9-a83b-e13759f1bf30",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x694",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fc9741a5-aa90-431a-a39a-6ea1415812c4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
+      "targets": [
+        ["linkText=Log in", "linkText"],
+        ["css=.login > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Log in')]", "xpath:link"],
+        ["xpath=//div[@id='usernavigation']/div/div/span/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost/moodle/login/index.php']", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d365660-8126-4250-9bc5-b5d88eb01ba8",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "38de1c69-9d28-4572-a245-7260f45e6cd5",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_17_2_1_1702045811820_20']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "goodstudent"
+    }, {
+      "id": "680464ef-67de-4cec-ad53-76eaf1468024",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "454a267f-bad8-41ed-b580-5852fdf86d97",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_17_2_1_1702045811820_25']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "wrongpassword"
+    }, {
+      "id": "fd81ae4e-fcb3-4ce7-a809-d5e4f75f1bbc",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginbtn",
+      "targets": [
+        ["id=loginbtn", "id"],
+        ["css=#loginbtn", "css:finder"],
+        ["xpath=//button[@id='loginbtn']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "620b71a1-2790-4edd-b1ac-398d20b8f8aa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//section[@id='region-main']/div/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e93d1d0b-b5d6-4125-9b4b-a5c2248478f5",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=loginerrormessage",
+      "targets": [
+        ["id=yui_3_17_2_1_1702048889979_20", "id"],
+        ["css=#yui_3_17_2_1_1702048889979_20", "css:finder"],
+        ["xpath=//div[@id='yui_3_17_2_1_1702048889979_20']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_17_2_1_1702048889979_21']/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div", "xpath:position"]
+      ],
+      "value": "Invalid login, please try again"
+    }]
+  }, {
+    "id": "db766e15-4128-4619-b5d2-0e84916b014a",
+    "name": "move_to_recovery",
+    "commands": [{
+      "id": "2d99e936-4ed0-4c04-81d3-7c96df16538e",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/moodle/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a9133da1-fea6-423f-a006-e348548dd602",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "699x661",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d76e1d35-37af-42ba-816e-45b6600030eb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
+      "targets": [
+        ["linkText=Log in", "linkText"],
+        ["css=.login > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Log in')]", "xpath:link"],
+        ["xpath=//div[@id='usernavigation']/div/div/span/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost/moodle/login/index.php']", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1860751-0f2e-49d5-8ed5-91227784144e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Lost password?",
+      "targets": [
+        ["linkText=Lost password?", "linkText"],
+        ["css=.login-form-forgotpassword > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Lost password?')]", "xpath:link"],
+        ["xpath=//form[@id='login']/div[4]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://localhost/moodle/login/forgot_password.php']", "xpath:href"],
+        ["xpath=//div[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Lost password?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8382979-e025-45a7-be45-27dbf19c9d26",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": "688,317"
+    }, {
+      "id": "62a8edca-4160-4efb-bc81-310b59d4fbbf",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": "688,317"
+    }, {
+      "id": "f425c042-772d-4f28-aa5f-63424db54f13",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": "688,317"
+    }, {
+      "id": "3aaa5e4d-e33f-4a92-bf25-6b6d76666b1d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#id_searchbyusername .position-relative > .d-flex",
+      "targets": [
+        ["css=#id_searchbyusername .position-relative > .d-flex", "css:finder"],
+        ["xpath=//fieldset[@id='id_searchbyusername']/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Search by username')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "445e1385-471e-4d68-8004-36381931ce33",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#id_searchbyemail .position-relative > .d-flex",
+      "targets": [
+        ["css=#id_searchbyemail .position-relative > .d-flex", "css:finder"],
+        ["xpath=//fieldset[@id='id_searchbyemail']/div/div/h3", "xpath:idRelative"],
+        ["xpath=//fieldset[2]/div/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Search by email address')]", "xpath:innerText"]
+      ],
+      "value": "Search by email address"
+    }]
+  }],
+  "suites": [{
+    "id": "4a769cf7-7679-4ee9-aca1-a5da3360c6f7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["1e9342ac-8cbf-440e-ad81-8ee9b5bf518e"]
+  }],
+  "urls": ["http://localhost/moodle/"],
+  "plugins": []
+}

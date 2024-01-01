@@ -1,0 +1,238 @@
+{
+  "id": "7c7b9ac0-dfd3-4a54-a7c2-307ec97a0ce1",
+  "version": "2.0",
+  "name": "pytest-dateedit",
+  "url": "http://localhost/moodle/course/edit.php?id=3&returnto=catmanage",
+  "tests": [{
+    "id": "58977410-81d7-4c44-a10e-5ac279092302",
+    "name": "date_accepted",
+    "commands": [{
+      "id": "b49fc2b8-037b-4b72-8963-1c2cae7d7bc3",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/moodle/course/edit.php?id=3&returnto=catmanage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b882cf28-2df3-40ab-a63d-788382c42976",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "622x732",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "43f76b03-6e82-4f97-819f-a612a4c9d662",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_startdate_day",
+      "targets": [
+        ["id=id_startdate_day", "id"],
+        ["name=startdate[day]", "name"],
+        ["css=#id_startdate_day", "css:finder"],
+        ["xpath=//select[@id='id_startdate_day']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_17_2_1_1702185694528_1009']/select", "xpath:idRelative"],
+        ["xpath=//span/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac1b8bf2-0421-484f-869b-ea6e60f1bcbb",
+      "comment": "",
+      "command": "select",
+      "target": "id=id_startdate_day",
+      "targets": [],
+      "value": "label=16"
+    }, {
+      "id": "e77b7fb1-6008-4a25-96d9-e4e84c394892",
+      "comment": "",
+      "command": "click",
+      "target": "css=#id_startdate_day > option:nth-child(16)",
+      "targets": [
+        ["css=#id_startdate_day > option:nth-child(16)", "css:finder"],
+        ["xpath=//option[@value='16']", "xpath:attributes"],
+        ["xpath=//select[@id='id_startdate_day']/option[16]", "xpath:idRelative"],
+        ["xpath=//option[16]", "xpath:position"],
+        ["xpath=//option[contains(.,'16')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c64ccd1-548f-439a-966d-cf17349a13d5",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_startdate_month",
+      "targets": [
+        ["id=id_startdate_month", "id"],
+        ["name=startdate[month]", "name"],
+        ["css=#id_startdate_month", "css:finder"],
+        ["xpath=//select[@id='id_startdate_month']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_17_2_1_1702185694528_1115']/select", "xpath:idRelative"],
+        ["xpath=//div[2]/span/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "758b350b-df29-48f2-ac32-7b37afed7c48",
+      "comment": "",
+      "command": "select",
+      "target": "id=id_startdate_month",
+      "targets": [],
+      "value": "label=October"
+    }, {
+      "id": "259984a1-2fe0-44a4-8b7b-2b68f437b8f2",
+      "comment": "",
+      "command": "click",
+      "target": "css=#id_startdate_month > option:nth-child(10)",
+      "targets": [
+        ["css=#id_startdate_month > option:nth-child(10)", "css:finder"],
+        ["xpath=(//option[@value='10'])[2]", "xpath:attributes"],
+        ["xpath=//select[@id='id_startdate_month']/option[10]", "xpath:idRelative"],
+        ["xpath=//div[2]/span/select/option[10]", "xpath:position"],
+        ["xpath=//option[contains(.,'October')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc1e0316-823d-44eb-a4f6-f42dc0d7f02f",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_saveanddisplay",
+      "targets": [
+        ["id=id_saveanddisplay", "id"],
+        ["name=saveanddisplay", "name"],
+        ["css=#id_saveanddisplay", "css:finder"],
+        ["xpath=//input[@id='id_saveanddisplay']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_17_2_1_1702185694528_1133']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3822a6b3-83bf-43cd-87b9-e3d9bb39e83f",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Course: French 1 | Moo3",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a00325b7-079a-4702-beb8-ee474635c004",
+    "name": "date_accepted (1)",
+    "commands": [{
+      "id": "b02b1c90-6298-47a8-8547-23e98cc7929f",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/moodle/course/edit.php?id=3&returnto=catmanage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "31bb47f8-9125-4a88-aa3c-9b91602990f8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "788x735",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d678bcb-baa5-42f2-9b5f-b01691b013cb",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_startdate_day",
+      "targets": [
+        ["id=id_startdate_day", "id"],
+        ["name=startdate[day]", "name"],
+        ["css=#id_startdate_day", "css:finder"],
+        ["xpath=//select[@id='id_startdate_day']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_17_2_1_1702208014679_1009']/select", "xpath:idRelative"],
+        ["xpath=//span/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "91c20c3b-0924-443e-b525-b943d782e235",
+      "comment": "",
+      "command": "select",
+      "target": "id=id_startdate_day",
+      "targets": [],
+      "value": "label=30"
+    }, {
+      "id": "c0575094-d0b7-4f75-b755-91f90d81565f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#id_startdate_day > option:nth-child(30)",
+      "targets": [
+        ["css=#id_startdate_day > option:nth-child(30)", "css:finder"],
+        ["xpath=//option[@value='30']", "xpath:attributes"],
+        ["xpath=//select[@id='id_startdate_day']/option[30]", "xpath:idRelative"],
+        ["xpath=//option[30]", "xpath:position"],
+        ["xpath=//option[contains(.,'30')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "91260b2c-41f8-4601-bcca-7ec02ae2ffc3",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_startdate_month",
+      "targets": [
+        ["id=id_startdate_month", "id"],
+        ["name=startdate[month]", "name"],
+        ["css=#id_startdate_month", "css:finder"],
+        ["xpath=//select[@id='id_startdate_month']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_17_2_1_1702208014679_1112']/select", "xpath:idRelative"],
+        ["xpath=//div[2]/span/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0a8765e-219e-464e-b696-514e0f6b989c",
+      "comment": "",
+      "command": "select",
+      "target": "id=id_startdate_month",
+      "targets": [],
+      "value": "label=March"
+    }, {
+      "id": "e7064511-3292-45b3-a450-3c1aabae2ccf",
+      "comment": "",
+      "command": "click",
+      "target": "css=#id_startdate_month > option:nth-child(2)",
+      "targets": [
+        ["css=#id_startdate_month > option:nth-child(2)", "css:finder"],
+        ["xpath=(//option[@value='2'])[3]", "xpath:attributes"],
+        ["xpath=//select[@id='id_startdate_month']/option[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/span/select/option[2]", "xpath:position"],
+        ["xpath=//option[contains(.,'February')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7452480f-f2c6-4443-92cf-d4d36406c464",
+      "comment": "",
+      "command": "verifyValue",
+      "target": "id=id_startdate_month",
+      "targets": [
+        ["id=id_startdate_month", "id"],
+        ["name=startdate[month]", "name"],
+        ["css=#id_startdate_month", "css:finder"],
+        ["xpath=//select[@id='id_startdate_month']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_17_2_1_1702208014679_1112']/select", "xpath:idRelative"],
+        ["xpath=//div[2]/span/select", "xpath:position"]
+      ],
+      "value": "3"
+    }, {
+      "id": "8b3b1f66-c090-4a45-bc5d-f2ecbff6e03f",
+      "comment": "",
+      "command": "storeValue",
+      "target": "id=id_startdate_month",
+      "targets": [
+        ["id=id_startdate_month", "id"],
+        ["name=startdate[month]", "name"],
+        ["css=#id_startdate_month", "css:finder"],
+        ["xpath=//select[@id='id_startdate_month']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_17_2_1_1702208014679_1112']/select", "xpath:idRelative"],
+        ["xpath=//div[2]/span/select", "xpath:position"]
+      ],
+      "value": "gkhvb"
+    }]
+  }],
+  "suites": [{
+    "id": "3a7447a2-90fc-44db-929e-d68b22147b8f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["58977410-81d7-4c44-a10e-5ac279092302"]
+  }],
+  "urls": ["http://localhost/moodle/course/edit.php?id=3&returnto=catmanage"],
+  "plugins": []
+}
